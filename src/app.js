@@ -15,6 +15,7 @@ const swaggerDocument = YAML.load(path.join(__dirname, "swagger.yaml"));
 app.use(
   cors({
     origin: [
+      "https://auth-crypto-product-crud.vercel.app",
       "http://localhost:5173",
       "http://localhost:5174",
       "http://localhost:3000",
