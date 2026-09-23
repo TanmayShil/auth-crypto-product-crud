@@ -77,6 +77,7 @@
 const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+const routes = require("./routes/index");
 
 const app = express();
 
@@ -105,5 +106,7 @@ app.get("/", (req, res) => {
     message: "Role Based Authentication System API is running",
   });
 });
+
+app.use("/api", routes);
 
 module.exports = app;
