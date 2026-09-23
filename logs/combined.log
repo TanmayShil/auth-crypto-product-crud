@@ -1,0 +1,205 @@
+2026-09-13T21:56:31.178Z [INFO]: MongoDB connected successfully
+2026-09-13T22:00:14.689Z [ERROR]: Registration error: next is not a function
+2026-09-13T22:02:31.017Z [INFO]: MongoDB connected successfully
+2026-09-13T22:02:39.544Z [INFO]: MongoDB connected successfully
+2026-09-13T22:02:57.816Z [ERROR]: Registration error: TypeError: next is not a function
+    at model.<anonymous> (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\app\models\User.js:61:3)
+    at async Kareem.execPre (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\kareem\index.js:61:24)
+    at async model.$__save (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\mongoose\lib\model.js:403:5)
+    at async maybeTracedSave (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\mongoose\lib\model.js:676:7)
+    at async model.create (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\mongoose\lib\model.js:2807:5)
+    at async register (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\app\controllers\authController.js:63:20)
+2026-09-13T22:03:43.912Z [INFO]: MongoDB connected successfully
+2026-09-13T22:03:57.417Z [ERROR]: Verification email failed for newjohndoe@yopmail.com: connect ECONNREFUSED 127.0.0.1:587
+2026-09-13T22:05:09.769Z [INFO]: MongoDB connected successfully
+2026-09-13T22:05:11.179Z [INFO]: MongoDB connected successfully
+2026-09-13T22:05:15.642Z [ERROR]: Verification email error: Error: connect ECONNREFUSED 127.0.0.1:587
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+2026-09-13T22:05:15.685Z [ERROR]: Verification email failed for newjohndoe@yopmail.com: connect ECONNREFUSED 127.0.0.1:587
+2026-09-13T22:11:27.947Z [INFO]: MongoDB connected successfully
+2026-09-13T22:11:46.470Z [ERROR]: Verification email error: Error: connect ECONNREFUSED 127.0.0.1:587
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+2026-09-13T22:11:46.518Z [ERROR]: Verification email failed for newjohndoe@yopmail.com: connect ECONNREFUSED 127.0.0.1:587
+2026-09-13T22:13:28.029Z [INFO]: MongoDB connected successfully
+2026-09-13T22:13:49.791Z [ERROR]: Verification email error: Error: Missing credentials for "PLAIN"
+    at SMTPConnection._formatError (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:774:19)
+    at SMTPConnection.login (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:458:38)
+    at E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-transport\index.js:256:32
+    at SMTPConnection.<anonymous> (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:181:17)
+    at Object.onceWrapper (node:events:622:28)
+    at SMTPConnection.emit (node:events:508:28)
+    at SMTPConnection._actionEHLO (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:1315:14)
+    at SMTPConnection._processResponse (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:957:20)
+    at SMTPConnection._onData (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:737:14)
+    at SMTPConnection._onSocketData (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:163:44)
+2026-09-13T22:13:49.833Z [ERROR]: Verification email failed for newjohndoe@yopmail.com: Missing credentials for "PLAIN"
+2026-09-13T22:14:08.848Z [ERROR]: Verification email error: Error: Missing credentials for "PLAIN"
+    at SMTPConnection._formatError (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:774:19)
+    at SMTPConnection.login (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:458:38)
+    at E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-transport\index.js:256:32
+    at SMTPConnection.<anonymous> (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:181:17)
+    at Object.onceWrapper (node:events:622:28)
+    at SMTPConnection.emit (node:events:508:28)
+    at SMTPConnection._actionEHLO (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:1315:14)
+    at SMTPConnection._processResponse (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:957:20)
+    at SMTPConnection._onData (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:737:14)
+    at SMTPConnection._onSocketData (E:\Webskitters_Academy\REACT-JS-FULL-COURSE\backend-apis\auth-product-apis\node_modules\nodemailer\dist\cjs\smtp-connection\index.js:163:44)
+2026-09-13T22:14:08.890Z [ERROR]: Verification email failed for newjohndoe@yopmail.com: Missing credentials for "PLAIN"
+2026-09-13T22:14:56.845Z [INFO]: MongoDB connected successfully
+2026-09-13T22:14:58.422Z [INFO]: MongoDB connected successfully
+2026-09-13T22:15:00.913Z [INFO]: MongoDB connected successfully
+2026-09-13T22:15:05.245Z [INFO]: MongoDB connected successfully
+2026-09-13T22:15:25.658Z [ERROR]: Verification email failed for newjohndoe@yopmail.com: Missing credentials for "PLAIN"
+2026-09-13T22:16:49.575Z [INFO]: MongoDB connected successfully
+2026-09-13T22:17:08.187Z [INFO]: User registered: newjohndoe@yopmail.com
+2026-09-13T22:17:51.897Z [INFO]: Email verified: newjohndoe@yopmail.com
+2026-09-13T22:19:21.638Z [INFO]: Verification email resent: newjohndoe@yopmail.com
+2026-09-13T22:19:38.243Z [INFO]: Email verified: newjohndoe@yopmail.com
+2026-09-13T22:20:11.070Z [INFO]: User logged in: newjohndoe@yopmail.com
+2026-09-13T22:20:36.633Z [INFO]: Refresh login successful: newjohndoe@yopmail.com
+2026-09-13T22:22:14.165Z [INFO]: Refresh login successful: newjohndoe@yopmail.com
+2026-09-13T22:23:33.154Z [INFO]: MongoDB connected successfully
+2026-09-13T22:23:43.504Z [ERROR]: Refresh token error: refresh_token is not defined
+2026-09-13T22:23:51.655Z [INFO]: Refresh login successful: newjohndoe@yopmail.com
+2026-09-13T22:24:04.738Z [ERROR]: Refresh token error: refresh_token is not defined
+2026-09-13T22:24:28.366Z [INFO]: User logged in: newjohndoe@yopmail.com
+2026-09-13T22:24:51.864Z [ERROR]: Refresh token error: refresh_token is not defined
+2026-09-13T22:27:06.985Z [INFO]: MongoDB connected successfully
+2026-09-13T22:27:08.090Z [INFO]: MongoDB connected successfully
+2026-09-13T22:27:16.430Z [INFO]: MongoDB connected successfully
+2026-09-13T22:27:17.530Z [INFO]: MongoDB connected successfully
+2026-09-13T22:28:17.190Z [INFO]: MongoDB connected successfully
+2026-09-13T22:28:58.960Z [INFO]: User logged in: newjohndoe@yopmail.com
+2026-09-13T22:32:40.036Z [INFO]: MongoDB connected successfully
+2026-09-13T22:32:43.898Z [INFO]: MongoDB connected successfully
+2026-09-13T22:32:45.830Z [INFO]: MongoDB connected successfully
+2026-09-13T22:32:47.500Z [INFO]: MongoDB connected successfully
+2026-09-13T22:32:52.420Z [INFO]: MongoDB connected successfully
+2026-09-13T22:32:56.761Z [INFO]: MongoDB connected successfully
+2026-09-13T22:33:15.657Z [INFO]: User logged in: newjohndoe@yopmail.com
+2026-09-13T22:35:17.131Z [INFO]: User logged in: newjohndoe@yopmail.com
+2026-09-13T22:36:41.783Z [INFO]: MongoDB connected successfully
+2026-09-13T22:37:25.081Z [INFO]: User logged in: newjohndoe@yopmail.com
+2026-09-13T22:41:59.370Z [INFO]: MongoDB connected successfully
+2026-09-13T22:42:54.259Z [INFO]: MongoDB connected successfully
+2026-09-13T22:43:24.658Z [INFO]: User logged in: newjohndoe@yopmail.com
+2026-09-13T22:45:49.654Z [INFO]: User logged in: newjohndoe@yopmail.com
+2026-09-13T22:47:09.753Z [INFO]: MongoDB connected successfully
+2026-09-13T22:47:13.163Z [INFO]: User logged in: newjohndoe@yopmail.com
+2026-09-13T22:48:46.230Z [INFO]: MongoDB connected successfully
+2026-09-13T22:52:42.432Z [INFO]: MongoDB connected successfully
+2026-09-13T22:53:01.178Z [INFO]: User logged in: newjohndoe@yopmail.com
+2026-09-13T22:54:47.369Z [INFO]: MongoDB connected successfully
+2026-09-13T22:55:23.886Z [INFO]: MongoDB connected successfully
+2026-09-13T22:58:43.910Z [INFO]: MongoDB connected successfully
+2026-09-13T22:59:33.549Z [INFO]: MongoDB connected successfully
+2026-09-13T22:59:51.153Z [INFO]: User logged in: newjohndoe@yopmail.com
+2026-09-13T23:03:54.294Z [INFO]: MongoDB connected successfully
+2026-09-13T23:07:00.101Z [INFO]: MongoDB connected successfully
+2026-09-13T23:07:05.975Z [INFO]: MongoDB connected successfully
+2026-09-13T23:09:01.464Z [INFO]: MongoDB connected successfully
+2026-09-13T23:11:24.944Z [INFO]: MongoDB connected successfully
+2026-09-13T23:11:29.118Z [INFO]: MongoDB connected successfully
+2026-09-13T23:12:10.337Z [INFO]: MongoDB connected successfully
+2026-09-13T23:12:13.966Z [INFO]: MongoDB connected successfully
+2026-09-13T23:12:15.177Z [INFO]: MongoDB connected successfully
+2026-09-13T23:12:22.303Z [INFO]: MongoDB connected successfully
+2026-09-13T23:12:22.868Z [INFO]: Admin created successfully: testaadmin@yopmail.com
+2026-09-13T23:12:29.226Z [INFO]: MongoDB connected successfully
+2026-09-13T23:21:20.154Z [INFO]: Category created: Electronics
+2026-09-13T23:24:55.603Z [INFO]: Category created: Electronics
+2026-09-13T23:26:51.524Z [INFO]: Product created: Wireless Headphones
+2026-09-14T06:38:59.746Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:02.943Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:05.174Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:06.836Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:08.536Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:10.993Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:13.943Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:15.072Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:18.679Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:23.917Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:27.020Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:33.644Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:34.732Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:35.830Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:36.888Z [INFO]: MongoDB connected successfully
+2026-09-14T06:41:40.160Z [INFO]: MongoDB connected successfully
+2026-09-14T06:42:02.922Z [INFO]: MongoDB connected successfully
+2026-09-14T06:42:20.036Z [INFO]: MongoDB connected successfully
+2026-09-14T06:42:55.564Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:11.596Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:13.350Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:15.141Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:17.217Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:19.498Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:23.698Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:27.519Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:28.810Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:32.895Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:35.516Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:38.790Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:40.523Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:45.230Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:53.881Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:58.064Z [INFO]: MongoDB connected successfully
+2026-09-14T06:43:59.403Z [INFO]: MongoDB connected successfully
+2026-09-14T06:44:03.336Z [INFO]: MongoDB connected successfully
+2026-09-14T06:44:47.943Z [INFO]: MongoDB connected successfully
+2026-09-14T06:45:24.696Z [INFO]: MongoDB connected successfully
+2026-09-14T07:47:41.461Z [INFO]: MongoDB connected successfully
+2026-09-14T07:48:33.978Z [INFO]: MongoDB connected successfully
+2026-09-14T07:48:36.316Z [INFO]: MongoDB connected successfully
+2026-09-14T07:48:38.344Z [INFO]: MongoDB connected successfully
+2026-09-14T07:48:42.161Z [INFO]: MongoDB connected successfully
+2026-09-14T07:48:45.510Z [INFO]: MongoDB connected successfully
+2026-09-14T07:48:47.750Z [INFO]: MongoDB connected successfully
+2026-09-14T07:48:52.381Z [INFO]: MongoDB connected successfully
+2026-09-14T07:48:58.189Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:02.044Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:03.444Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:07.632Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:08.756Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:09.736Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:11.579Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:14.477Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:18.559Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:25.109Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:27.067Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:31.814Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:33.218Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:37.911Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:41.488Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:43.303Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:46.772Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:51.697Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:54.897Z [INFO]: MongoDB connected successfully
+2026-09-14T07:49:57.603Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:03.126Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:09.967Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:14.442Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:16.694Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:28.589Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:33.063Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:38.581Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:41.472Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:44.712Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:50.374Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:52.598Z [INFO]: MongoDB connected successfully
+2026-09-14T07:50:58.729Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:02.783Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:05.656Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:13.775Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:19.149Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:25.553Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:28.173Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:32.080Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:36.452Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:39.784Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:41.379Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:49.654Z [INFO]: MongoDB connected successfully
+2026-09-14T07:51:55.093Z [INFO]: MongoDB connected successfully
+2026-09-23T09:25:41.089Z [INFO]: MongoDB connected successfully
+2026-09-23T09:27:17.371Z [INFO]: MongoDB connected successfully
+2026-09-23T09:27:17.966Z [INFO]: Admin created successfully: admin-crypto@gmail.com
+2026-09-23T09:29:59.443Z [INFO]: MongoDB connected successfully
