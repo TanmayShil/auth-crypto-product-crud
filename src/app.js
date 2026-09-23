@@ -1,21 +1,13 @@
 const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
-const path = require("path");
-const swaggerUi = require("swagger-ui-express");
-const YAML = require("yamljs");
 
 const routes = require("./routes/index");
-const logger = require("./utils/logger");
-
 const app = express();
-
-const swaggerDocument = YAML.load(path.join(__dirname, "swagger.yaml"));
 
 app.use(
   cors({
     origin: [
-      "https://auth-crypto-product-crud.vercel.app",
       "http://localhost:5173",
       "http://localhost:5174",
       "http://localhost:3000",
@@ -36,17 +28,6 @@ app.get("/", (req, res) => {
     message: "Role Based Authentication System API is running",
   });
 });
-
-app.use(
-  "/api-docs",
-  swaggerUi.serve,
-  swaggerUi.setup(swaggerDocument, {
-    explorer: true,
-    swaggerOptions: {
-      persistAuthorization: true,
-    },
-  }),
-);
 
 app.use("/api", routes);
 
