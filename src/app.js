@@ -78,33 +78,51 @@ const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const path = require("path");
-const swaggerUi = require("swagger-ui-express");
-const YAML = require("yamljs");
 
 const routes = require("./routes/index");
+const logger = require("./utils/logger");
 
 const app = express();
 
-const swaggerDocument = YAML.load(path.join(__dirname, "swagger.yaml"));
+/* ================================
+   CORS
+================================ */
 
 app.use(
   cors({
     origin: [
-      "https://auth-crypto-product-crud.vercel.app",
       "http://localhost:5173",
       "http://localhost:5174",
       "http://localhost:3000",
       "http://localhost:3001",
-      "http://localhost:5000",
       "http://localhost:6899",
     ],
     credentials: true,
   }),
 );
 
+/* ================================
+   BODY PARSER
+================================ */
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+/* ================================
+   COOKIE PARSER
+================================ */
+
 app.use(cookieParser());
+
+/* ================================
+   STATIC UPLOADS
+================================ */
+
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
+/* ================================
+   HEALTH CHECK
+================================ */
 
 app.get("/", (req, res) => {
   res.status(200).json({
@@ -113,23 +131,37 @@ app.get("/", (req, res) => {
   });
 });
 
-app.use(
-  "/api-docs",
-  swaggerUi.serve,
-  swaggerUi.setup(swaggerDocument, {
-    explorer: true,
-    swaggerOptions: {
-      persistAuthorization: true,
-    },
-  }),
-);
+/* ================================
+   API ROUTES
+================================ */
 
 app.use("/api", routes);
+
+/* ================================
+   404 HANDLER
+================================ */
 
 app.use((req, res) => {
   res.status(404).json({
     success: false,
     message: "Route not found",
+  });
+});
+
+/* ================================
+   GLOBAL ERROR HANDLER
+================================ */
+
+app.use((error, req, res, next) => {
+  console.error("Unhandled server error:", error);
+
+  if (logger && typeof logger.error === "function") {
+    logger.error(`Unhandled server error: ${error.message}`);
+  }
+
+  return res.status(500).json({
+    success: false,
+    message: "Internal server error",
   });
 });
 
