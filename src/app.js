@@ -1,5 +1,3 @@
-// require("dotenv").config();
-
 const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
@@ -12,7 +10,7 @@ const logger = require("./utils/logger");
 
 const app = express();
 
-const swaggerDocument = YAML.load(path.join(__dirname, "", "swagger.yaml"));
+const swaggerDocument = YAML.load(path.join(__dirname, "swagger.yaml"));
 
 app.use(
   cors({
@@ -30,8 +28,6 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.get("/", (req, res) => {
   res.status(200).json({
